@@ -20,13 +20,16 @@
 
         .box1 {
           grid-area: box1;
-          background-image: url('../media/degrade-rouge.png');
+          background-color: $secondary-color;
+          display: flex;
+          flex-direction: row;
+          justify-content: center; 
+          align-items: center;
 
           .img {
             width: 40%;
             margin: auto;
-            //margin-top: 8vh;
-            margin-top: 14vh;
+          
                
             img {
               width: 100%;
@@ -51,11 +54,16 @@
 
         .box4 {
             grid-area: box4;
-            background-image: linear-gradient(to right top, #26447a, #215181, #225d87, #236189, #2f728f, #4c98b6);            
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+            justify-content: center; 
+            align-items: center;
+                        
             .img {
               width: 40%;
               margin: auto;
-              margin-top: 14vh;
+  
               
                   
               img {
@@ -68,11 +76,14 @@
 
         .box5 {
           grid-area: box5;
-          background-image: linear-gradient(to right top, #7ee31e, #91e41d, #a2e51f, #b1e522, #c0e627, #cae829, #d3eb2b, #dded2d, #e5f22b, #eef629, #f6fb27, #ffff25);            
+          background-color: $secondary-color;
+          display: flex;
+          flex-direction: row;
+          justify-content: center; 
+          align-items: center;
           .img {
             width: 40%;
             margin: auto;
-            margin-top: 14vh;
             
                 
             img {

@@ -490,13 +490,25 @@
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: box1;
-  background-image: url("../media/degrade-rouge.png");
+  background-color: #F8CB3A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #work .container-grid .box1 .img {
   width: 40%;
   margin: auto;
-  margin-top: 14vh;
 }
 
 #work .container-grid .box1 .img img {
@@ -530,14 +542,25 @@
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: box4;
-  background-image: -webkit-gradient(linear, left bottom, right top, from(#26447a), color-stop(#215181), color-stop(#225d87), color-stop(#236189), color-stop(#2f728f), to(#4c98b6));
-  background-image: linear-gradient(to right top, #26447a, #215181, #225d87, #236189, #2f728f, #4c98b6);
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #work .container-grid .box4 .img {
   width: 40%;
   margin: auto;
-  margin-top: 14vh;
 }
 
 #work .container-grid .box4 .img img {
@@ -549,14 +572,25 @@
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: box5;
-  background-image: -webkit-gradient(linear, left bottom, right top, from(#7ee31e), color-stop(#91e41d), color-stop(#a2e51f), color-stop(#b1e522), color-stop(#c0e627), color-stop(#cae829), color-stop(#d3eb2b), color-stop(#dded2d), color-stop(#e5f22b), color-stop(#eef629), color-stop(#f6fb27), to(#ffff25));
-  background-image: linear-gradient(to right top, #7ee31e, #91e41d, #a2e51f, #b1e522, #c0e627, #cae829, #d3eb2b, #dded2d, #e5f22b, #eef629, #f6fb27, #ffff25);
+  background-color: #F8CB3A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #work .container-grid .box5 .img {
   width: 40%;
   margin: auto;
-  margin-top: 14vh;
 }
 
 #work .container-grid .box5 .img img {
