@@ -611,6 +611,7 @@
   margin-right: 3vw;
   border: #fff solid 6px;
   background: #fff;
+  /* Fade in animation */
 }
 
 #work .container-gallerie1 .container .main-img img,
@@ -625,6 +626,24 @@
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   grid-gap: 7px;
+}
+
+@-webkit-keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+#work .container-gallerie1 .container .fade-in {
+  opacity: 0;
+  -webkit-animation: fadeIn 0.5s ease-in 1 forwards;
+          animation: fadeIn 0.5s ease-in 1 forwards;
 }
 
 @media screen and (max-width: 758px) {

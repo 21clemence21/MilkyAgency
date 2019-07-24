@@ -114,6 +114,7 @@
       }
 
       .container {
+
         width: 80%;
         max-width: 560px;
         margin: auto;
@@ -131,10 +132,28 @@
           grid-template-columns: repeat(4,1fr);
           grid-gap:7px;
         }
+        
+        /* Fade in animation */
+        @keyframes fadeIn {
+        to {
+          opacity: 1;
+        }
+        }
+
+        .fade-in {
+        opacity: 0;
+        animation: fadeIn 0.5s ease-in 1 forwards;
+        }
+
+
+
       }
   
   }
     
 }
+
+
+
 
 @import 'mobile';

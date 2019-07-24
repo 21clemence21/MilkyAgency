@@ -9,6 +9,7 @@ const box2 = document.querySelector('.box2');
 // Dom items for gallerie1
 const currentImg = document.querySelector('#current-img');
 const imgs = document.querySelectorAll('.imgs img');
+const opacity = 0.4;
 
 // Set initial State of box2 
 let showBox2 = false;
@@ -83,6 +84,22 @@ function debounce(func, wait = 20, immediate = true) {
 
 
 // Section work image gallerie
-imgs.forEach(img => 
-  img.addEventListener('click', e => (currentImg.src = e.target.src))
-  );
+imgs.forEach(img => img.addEventListener('click', 
+imgClick));
+  
+function imgClick(e){
+  // Reset the opacity 
+  imgs.forEach(img => (img.style.opacity = 1));
+
+  // Change current image to src of clicked image
+  currentImg.src = e.target.src;
+  
+  //Add fade in class
+  currentImg.classList.add('fade-in');
+
+  // Remove fade-in class after .5 seconds
+  setTimeout(()=> currentImg.classList.remove('fade-in'),500);
+
+  // Change the opacity to opacity var
+  e.target.style.opacity = opacity;
+}
