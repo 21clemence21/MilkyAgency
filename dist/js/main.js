@@ -10,6 +10,7 @@ const box2 = document.querySelector('.box2');
 const currentImg = document.querySelector('#current-img');
 const imgs = document.querySelectorAll('.imgs img');
 const opacity = 0.4;
+const titlework2 = document.querySelector('title-gallerie1');
 
 // Set initial State of box2 
 let showBox2 = false;
@@ -102,4 +103,24 @@ function imgClick(e){
 
   // Change the opacity to opacity var
   e.target.style.opacity = opacity;
+}
+
+// chat box appear on click on question
+const question = document.querySelector('#question');
+const reponse = document.querySelector('#questions-reponses');
+let showChat = false;
+
+question.addEventListener('click', toggleChat); 
+
+function toggleChat(){
+  console.log('hello Chat box');
+  if(!showChat){
+    reponse.classList.add('show');
+    question.classList.add('show');
+    showChat  = true;
+  } else if(showChat) {
+    reponse.classList.remove('show');
+    question.classList.remove('show');
+    showChat = false;
+  }
 }

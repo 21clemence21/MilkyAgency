@@ -1,0 +1,57 @@
+#container-chat-box  {
+  position: fixed;
+  top: 85vh;
+  left: 2vw;
+  z-index: 2;
+    
+  #question {
+    background-color: white;
+    padding: 0.5rem;
+    color: $primary-color;
+    border: 7px darken($secondary-color,20) solid;
+    border-radius: 15px;
+    margin-left: 10px;
+    opacity: 0.8;
+    cursor: pointer;
+    i {
+      color: $secondary-color;
+      &.show {
+        color: rgb(13, 17, 13);
+      }
+    }
+    @include easeOut;
+    &:hover {
+      opacity: 1;
+      border-color: darken($secondary-color, 10);
+    }
+
+    &.show {
+      border: 7px green solid;
+      color: green;
+      opacity: 1;
+    }
+    
+  }
+
+  #questions-reponses {
+    position: fixed;
+    left: 10vw;
+    top: 50vh;
+    background-color: white;
+    color: black;
+    height: 45vh;
+    width: 45vw;
+    border-radius: 15px;
+    border: $secondary-color 7px solid;
+    padding: 1rem;
+    transform: translate3D(0, 300%, 0);
+    visibility: hidden;
+    @include easeOut;
+
+    &.show {
+        visibility: visible;
+        transform: translate3d(0,0,0);
+    }
+  }
+
+}
