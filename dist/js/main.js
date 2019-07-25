@@ -12,6 +12,8 @@ const imgs = document.querySelectorAll('.imgs img');
 const opacity = 0.4;
 const titlework2 = document.querySelector('title-gallerie1');
 
+
+
 // Set initial State of box2 
 let showBox2 = false;
 
@@ -113,9 +115,11 @@ let showChat = false;
 question.addEventListener('click', toggleChat); 
 
 function toggleChat(){
+
   console.log('hello Chat box');
   if(!showChat){
     reponse.classList.add('show');
+    reponse.style.opacity = '1';
     question.classList.add('show');
     showChat  = true;
   } else if(showChat) {
@@ -123,4 +127,26 @@ function toggleChat(){
     question.classList.remove('show');
     showChat = false;
   }
+}
+
+//Dom items for faq 
+const questionFaq = document.querySelector('.question-faq');
+const reponseFaq = document.querySelector('.reponse-faq');
+let showReponseFaq = false;
+
+// Show answer of FAQ on click 
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
 }
